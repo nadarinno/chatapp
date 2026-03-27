@@ -23,7 +23,6 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  // New: Forgot Password Function
   void _forgotPassword() async {
     final auth = context.read<AuthController>();
     final e = email.text.trim();
@@ -135,7 +134,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                 const SizedBox(height: 8),
 
-                // Forgot Password Button
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
